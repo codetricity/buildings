@@ -1,0 +1,84 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>Theta Viewer</title>
+  <meta name="description" content="RICOH THETA like equirectangular projection panorama HTML5 viewer">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">Theta Viewer</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">RICOH THETA like equirectangular projection panorama HTML5 viewer</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/akokubo/ThetaViewer/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/akokubo/ThetaViewer/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/akokubo/ThetaViewer" class="code">GitHubでTheta Viewerを閲覧</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          
+<h3><a name="welcome-to-theta-viewer-page" class="anchor" href="#welcome-to-theta-viewer-page"><span class="octicon octicon-link"></span></a>Theta Viewerのページへようこそ</h3>
+
+<p>Theta Viewerは、RICOH THETAのような正距円筒図法(equirectangular projection)のパノラマ画像のHTML5ビューアーです。</p>
+<img src="images/equirectangular-projection-panorama.jpg">
+<p>Theta Viewerは、<a href="http://jquery.com/">jQuery</a>のプラグインになっていて、必要なライブラリを読み込んだ上で、以下のようなコードを埋め込むことで、Webサイトなどに正距円筒図法のパノラマ画像を表示することができます。</p>
+
+<pre><code>&lt;div id=&quot;embed-area&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+(function ($) {
+    'use strict';
+    $(&quot;#embed-area&quot;).createThetaViewer(&quot;image/panorama-image.jpg&quot;);
+}(jQuery));
+&lt;/script&gt;
+</code></pre>
+
+<p>Theta Viewerは、JavaScriptのHTML5 3Dグラフィックスライブラリ<a href="http://threejs.org/">three.js</a>を利用して表示を行なっています。現時点ではWebGLの動作するPCのブラウザで閲覧することができます。また、今後、iOSやAndroidでも動作するようにしたいと考えています。</p>
+
+<h3><a name="theta-viewer-demo" class="anchor" href="#theta-viewer-demo"><span class="octicon octicon-link"></span></a>Theta Viewerのデモ</h3>
+<ul>
+<li><a href="demo1.html">サイトにアップしたパノラマ画像を表示するデモ</a></li>
+<li><a href="demo2.html">ドラッグ&amp;ドロップしたパノラマ画像を表示するデモ</a></li>
+</ul>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/akokubo" class="avatar"><img src="https://0.gravatar.com/avatar/1806923035bc315ce4f6a90a81429239?d=https%3A%2F%2Fidenticons.github.com%2Ff1acbf8b5b1d37149a55b6d0a2bfdc98.png&amp;r=x&amp;s=60" width="48" height="48"/></a> <a href="https://github.com/akokubo">akokubo</a> maintains <a href="https://github.com/akokubo/ThetaViewer">Theta Viewer</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/akokubo/ThetaViewer/tarball/master" class="tar">tar</a><a href="https://github.com/akokubo/ThetaViewer/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
